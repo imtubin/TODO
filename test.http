@@ -1,0 +1,44 @@
+### GET request to example server
+GET https://examples.http-client.intellij.net/get
+    ?generated-in=IntelliJ IDEA
+
+###
+GET localhost:8081/todos
+
+###
+
+POST localhost:8081/todos
+Content-Type: application/json
+
+{ "title": "친구만나기",
+  "content": "00역 앞",
+  "deadLine": "2025-02-08T14:00:00"
+}
+
+###
+
+POST localhost:8081/todos
+Content-Type: application/json
+
+{ "title": "책 반납하기",
+"content": "00도서관 00자료실",
+"deadLine": "2025-02-10T18:00:00"
+}
+
+###
+GET localhost:8081/todos/2
+
+###
+PUT localhost:8081/todos/2
+Content-Type: application/json
+
+{ "title": "책 반납하기",
+  "content": "00도서관 00자료실",
+  "deadLine": "2025-02-10T18:00:00",
+  "completed": true
+}
+
+###
+DELETE localhost:8081/todos/1
+
+
